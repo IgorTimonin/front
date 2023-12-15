@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-const plugin = require('tailwindcss');
+const plugin = require('tailwindcss/plugin');
 const colors = require('tailwindcss/colors');
-// const plugins = require('tailwindcss/plugin');
 
 const primary = '#e30b13';
 
