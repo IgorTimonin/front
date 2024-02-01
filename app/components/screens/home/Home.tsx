@@ -1,12 +1,13 @@
 import { FC } from "react"
 import { IHome } from "./home.interface"
-import Layout from "@/components/layout/Layout"
+import Meta from "api/Meta/Meta"
+import Heading from "@/components/ui/headings/Heading"
 
 const Home: FC<IHome> = () => {
   return (
-    <Layout>
-      <h1>Home Page</h1>
-    </Layout>
+    <Meta title='Онлайн кинотеатр' description='Онлайн кинотеатр Online Cinema. Кино начинается здесь.'>
+      <Heading title='Ваш личный онлайн кинотеатр' className="text-gray-300 mb-8 text-xl"/>
+    </Meta>
   )
 }
 

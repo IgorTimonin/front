@@ -1,8 +1,25 @@
-import { FC } from "react"
+'use client'
 
-const MenuItem:FC = () => {
+import cn from "classnames"
+import { usePathname } from "next/navigation"
+import { FC } from "react"
+import styles from './Menu.module.scss'
+import { IMenuItem } from "./menu.interface"
+import Link from "next/link"
+import MaterialIcon from "@/components/ui/MaterialIcon"
+
+const MenuItem: FC<{ item: IMenuItem }> = ({ item }) => {
+  const pathname = usePathname()
+
   return (
-    <div>MenuItem</div>
+    <li className={cn({
+      [styles.active]: pathname === item.link
+    })}>
+      <Link href={item.link} className="">
+        <MaterialIcon name={item.icon} />
+        <span>{item.title}</span>
+      </Link>
+    </li>
   )
 }
 

@@ -1,12 +1,12 @@
 import { IMenu } from "./menu.interface";
 
-const firstMenu: IMenu = {
-  title: 'Menu',
+export const firstMenu: IMenu = {
+  title: 'Меню',
   items: [
     {
       icon: 'MdHome',
       link: '/',
-      title: 'Home'
+      title: 'Главная'
     },
     {
       icon: 'MdExplore',
@@ -14,7 +14,7 @@ const firstMenu: IMenu = {
       title: 'Каталог'
     },
     {
-      icon: 'MdRefresh',
+      icon: 'MdFiberNew',
       link: '/fresh',
       title: 'Новинки'
     },
@@ -27,7 +27,7 @@ const firstMenu: IMenu = {
 }
 export const userMenu: IMenu = {
   title: 'Управление',
-  item: []
+  items: []
 }
 
 export const menus: IMenu[] = [firstMenu, userMenu]
