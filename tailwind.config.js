@@ -42,7 +42,7 @@ module.exports = {
         layout: '0.8rem',
       },
       transitionTimingFunction: {
-        DEFAULT: 'easy-in-out',
+        DEFAULT: 'ease-in-out',
       },
       transitionDuration: {
         DEFAULT: '200ms',
