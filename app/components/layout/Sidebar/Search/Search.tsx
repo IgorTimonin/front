@@ -1,3 +1,4 @@
+'use client'
 import { FC } from "react"
 import { useSearch } from "./useSearch"
 import SearchList from "./SearchList/SearchList"

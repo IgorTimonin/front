@@ -1,10 +1,21 @@
-// import type { Metadata } from 'next'
-import '../styles/globals.scss'
+import type { Metadata } from 'next'
+import '@/assets/styles/globals.scss'
 
-// export const metadata: Metadata = {
-//   title: 'Online Cinema',
-//   description: 'Service for online movie watching',
-// }
+export const metadata: Metadata = {
+  title: {
+    template: '%s | ONline Cinema',
+    default: 'ONline Cinema',
+  },
+  description: 'Онлайн кинотеатр: Online Cinema. Кино начинается здесь.',
+  openGraph: {
+    title: 'ONline Cinema',
+    description: 'Онлайн кинотеатр: Online Cinema. Кино начинается здесь.',
+    url: 'https://.com',
+    siteName: 'ONline Cinema',
+    locale: 'ru_RU',
+    type: 'website',
+  },
+}
 
 export default function RootLayout({
   children,
